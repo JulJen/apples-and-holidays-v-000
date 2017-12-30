@@ -55,7 +55,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:summer].values.flatten
 end
 
-# def all_supplies_in_holidays(holiday_hash)
+def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
@@ -81,8 +81,8 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  second_supply_for_fourth_of_july(holiday_hash)
-end 
+  puts "#{holiday_name}"
+end
   # holiday_hash.each do |season, holiday_details_hash|
     # puts "#{holiday_details_hash.keys.select {|key| key.to_s.include?("BBQ")}}"
 #   end
