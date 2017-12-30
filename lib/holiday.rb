@@ -72,8 +72,8 @@ def all_supplies_in_holidays(holiday_supplies)
   holiday_supplies.each do |season, holiday_details_hash|
     holiday_details_hash.to_s
 
-string = 'this:1, is:1, a:1, string:1'
-hash = Hash[*string.split(/:|,/)]
+# string = 'this:1, is:1, a:1, string:1'
+# hash = Hash[*string.split(/:|,/)]
     puts "#{season}".capitalize
   # if value = holiday_supplies[item]
   #   puts "#{item}: #{value}"
