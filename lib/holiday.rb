@@ -80,7 +80,7 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday_details_hash|
-    if holiday_details_hash.has_key?("BBQ")
+    # if holiday_details_hash.has_key?("BBQ")
       holiday_supplies = season.select {|k,v| v.has_key?("BBQ")}  #=> {"a" => 100}
       puts holiday_supplies
     end
