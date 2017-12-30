@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash[:summer][:fourth_of_july][1]
+  holiday_hash[:summer][1]
 end
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
