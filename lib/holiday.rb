@@ -72,8 +72,8 @@ def all_supplies_in_holidays(holiday_supplies)
     holiday_details_hash.each do |holiday_name, items|
       item_array = items.join(", ")
       holiday_array = holiday_name.to_s.split("_")
-      supplies_array = holiday_array.collect {|word| word.capitalize}
-      puts "  #{supplies_array.join(" ")}: " << item_array
+      supplies_array = holiday_array.collect {|word| word.capitalize}.join(" ")
+      puts "  #{supplies_array}: " << item_array
       # puts "  #{holiday_array.collect {|word| word.capitalize}.join(" ")}: " << item_array
 
       # puts "  #{holiday_name.to_s.split("_").collect {|word| word.capitalize}.join(" ")}: " << new_array
