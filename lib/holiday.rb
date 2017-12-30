@@ -70,38 +70,11 @@ def all_supplies_in_holidays(holiday_supplies)
 
   # holiday_supplies = gets.chomp.upcase
   holiday_supplies.each do |season, holiday_details_hash|
-    holiday_details_hash.to_s
-
-# string = 'this:1, is:1, a:1, string:1'
-# hash = Hash[*string.split(/:|,/)]
     puts "#{season}:".capitalize
     holiday_details_hash.each do |holiday_name, items|
       new_array = holiday_name.to_s
-
-  # if value = holiday_supplies[item]
-  #   puts "#{item}: #{value}"
-  # # else
-  #   puts "Error, #{item} not found!"
-  # end
-
-
-
-
-    # frequencies = Hash.new(0)
-    #
-    # words.each do |word|
-    #     puts frequencies[word] += 1
-    # end
-    # frequencies = frequencies.sort_by do |words, count| count end
-    # frequencies.reverse!
-    #
-    # frequencies.each do |word, count|
-    #     puts "#{word} #{count}"
-    # end
-    # puts "#{season}: #{holiday_details_hash}".join
-  # end
-    # puts "#{season}:".capitalize
-  end
+    end
+  end 
 end
 
 def all_holidays_with_bbq(holiday_hash)
