@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_supplies)
     end
   end
 end
-
+# puts "  #{holiday.to_s.split("_").map {|w| w.capitalize}.join(" ")}: #{supplies.join(", ")}"
 # rray = event.to_s.split("_")
 #       capitalize = array.collect {|w| w.capitalize}
 #       back_to_string = capitalize.join(" ")
