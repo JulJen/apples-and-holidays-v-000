@@ -74,15 +74,9 @@ def all_supplies_in_holidays(holiday_supplies)
       holiday_array = holiday_name.to_s.split("_")
       supplies_array = holiday_array.collect {|word| word.capitalize}.join(" ")
       puts "  #{supplies_array}: " << item_array
-    end 
+    end
   end
 end
-# puts "  #{holiday.to_s.split("_").map {|w| w.capitalize}.join(" ")}: #{supplies.join(", ")}"
-# rray = event.to_s.split("_")
-#       capitalize = array.collect {|w| w.capitalize}
-#       back_to_string = capitalize.join(" ")
-#       #puts "  #{event.to_s.split("_").collect {|w| w.capitalize}.join(" ")}: #{supplies.join(", ")}"
-# puts "  #{back_to_string}: #{supplies.join(", ")}"
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
