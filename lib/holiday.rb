@@ -55,7 +55,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].values.flatten
 end
 
-def all_supplies_in_holidays(holiday_supplies)
+def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
@@ -67,10 +67,10 @@ def all_supplies_in_holidays(holiday_supplies)
   # Spring:
   #   Memorial Day: BBQ
   # capitalize *both* words, you'll need to `.split` the string into an array and iterate over that array to `.capitalize!` each word in it. Then, you'll need to `.join` the array back into a string.
-  holiday_supplies.each do |season, holiday_details_hash|
+  holiday_hash.each do |season, holiday_details_hash|
     puts "#{season}:".capitalize
-    holiday_details_hash.each do |holiday_name, items|
-      item_array = items.join(", ")
+    holiday_details_hash.each do |holiday_name, holiday_supplies|
+      item_array = holiday_supplies.join(", ")
       holiday_array = holiday_name.to_s.split("_")
       supplies_array = holiday_array.collect {|word| word.capitalize}.join(" ")
       puts "  #{supplies_array}: " << item_array
