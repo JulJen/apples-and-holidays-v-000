@@ -74,10 +74,7 @@ def all_supplies_in_holidays(holiday_supplies)
       holiday_array = holiday_name.to_s.split("_")
       supplies_array = holiday_array.collect {|word| word.capitalize}.join(" ")
       puts "  #{supplies_array}: " << item_array
-      # puts "  #{holiday_array.collect {|word| word.capitalize}.join(" ")}: " << item_array
-
-      # puts "  #{holiday_name.to_s.split("_").collect {|word| word.capitalize}.join(" ")}: " << new_array
-    end
+    end 
   end
 end
 # puts "  #{holiday.to_s.split("_").map {|w| w.capitalize}.join(" ")}: #{supplies.join(", ")}"
