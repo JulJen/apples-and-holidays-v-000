@@ -74,12 +74,19 @@ def all_supplies_in_holidays(holiday_supplies)
     holiday_details_hash.each do |holiday_name, items|
       # new_array = holiday_name.to_s.capitalize
       new_array = holiday_name.to_s.split("_")
+      new_array.collect do {|word| word.capitalize}
 
       new_array2 = items.join(", ")
       puts "  #{new_array}: " + new_array2
     end
   end
 end
+
+# rray = event.to_s.split("_")
+#       capitalize = array.collect {|w| w.capitalize}
+#       back_to_string = capitalize.join(" ")
+#       #puts "  #{event.to_s.split("_").collect {|w| w.capitalize}.join(" ")}: #{supplies.join(", ")}"
+# puts "  #{back_to_string}: #{supplies.join(", ")}"
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
