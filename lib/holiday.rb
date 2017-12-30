@@ -81,9 +81,9 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday_details_hash|
     holiday_supplies = holiday_details_hash.select {|k,v| v.has_key?("BBQ")}
-    puts "#{holiday_supplies}"
-  end 
-end 
+    puts "#{k}"
+  end
+end
     # if holiday_details_hash.has_key?("BBQ")
     # holiday_details_hash.each do |holiday_name, holiday_supplies|
       # holiday_supplies = season.select {|k,v| v.has_key?("BBQ")}
