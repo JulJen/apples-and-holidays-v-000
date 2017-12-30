@@ -82,7 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
   # if holiday_hash[:summer][:fourth_of_july][1]
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  new_array = Array.new
+  supply_array = Array.new
   holiday_hash.each do |season, holiday_details_hash|
     holiday_details_hash.each do |holiday_name, holiday_supplies|
       if holiday_supplies.include?("BBQ")
@@ -90,7 +90,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  new_array
+  supply_array
 end
 
   #   puts "#{holiday_details_hash.keys.select {|key| key.to_s.include?("BBQ")}}"
