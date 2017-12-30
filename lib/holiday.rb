@@ -82,6 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
   # if holiday_hash[:summer][:fourth_of_july][1]
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  new_holiday_hash = {}
   holiday_hash.each do |season, holiday_details_hash|
     holiday_details_hash.each do |holiday_name, holiday_supplies|
       if holiday_supplies.to_s.include?("BBQ") }
