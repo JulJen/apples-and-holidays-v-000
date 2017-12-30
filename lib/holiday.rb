@@ -85,10 +85,13 @@ def all_holidays_with_bbq(holiday_hash)
   new_array = array.new
   holiday_hash.each do |season, holiday_details_hash|
     holiday_details_hash.each do |holiday_name, holiday_supplies|
-      if holiday_supplies.to_s.include?("BBQ") }
-
+      if holiday_supplies.to_s.include?("BBQ")
+        new_array << holiday_name
+      end
+    end
   end
-end
+end 
+
   #   puts "#{holiday_details_hash.keys.select {|key| key.to_s.include?("BBQ")}}"
 
 
