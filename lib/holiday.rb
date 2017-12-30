@@ -67,12 +67,10 @@ def all_supplies_in_holidays(holiday_supplies)
   # Spring:
   #   Memorial Day: BBQ
   # capitalize *both* words, you'll need to `.split` the string into an array and iterate over that array to `.capitalize!` each word in it. Then, you'll need to `.join` the array back into a string.
-
-  # holiday_supplies = gets.chomp.upcase
   holiday_supplies.each do |season, holiday_details_hash|
     puts "#{season}:".capitalize
     holiday_details_hash.each do |holiday_name, items|
-      # new_array = holiday_name.to_s.capitalize
+
       puts "  #{holiday_name.to_s.split("_").collect {|word| word.capitalize}.join(" ")}:"
 
       # new_array3 = new_array2.join(", ")
