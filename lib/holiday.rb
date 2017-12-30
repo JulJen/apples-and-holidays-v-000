@@ -90,6 +90,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
+  new_array
 end
 
   #   puts "#{holiday_details_hash.keys.select {|key| key.to_s.include?("BBQ")}}"
